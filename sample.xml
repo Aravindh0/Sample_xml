@@ -216,24 +216,24 @@
             <product_category>Electronics</product_category>
             <payment_details>
                 <payment_method>PayPal</payment_method>
-                <transaction_status>Completed</transaction_status>
+                <transaction_status>Pending</transaction_status>
                 <payment_date>2024-10-14T11:07:00</payment_date>
             </payment_details>
             <shipping_info>
                 <address>
-                    <line1>202 Birch Boulevard</line1>
+                    <line1>202 Birch Lane</line1>
                     <city>Springfield</city>
                     <state>IL</state>
                     <zip>62705</zip>
                     <country>USA</country>
                 </address>
-                <shipping_method>Expedited Shipping</shipping_method>
+                <shipping_method>Express Shipping</shipping_method>
                 <shipping_date>2024-10-15</shipping_date>
                 <tracking_number>TRACK778899</tracking_number>
             </shipping_info>
             <customer_feedback>
                 <rating>5</rating>
-                <comments>Excellent service and product!</comments>
+                <comments>Best purchase ever! Great customer service.</comments>
             </customer_feedback>
         </transaction>
     </transactions>
