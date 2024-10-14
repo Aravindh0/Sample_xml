@@ -1,37 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <soap:Body>
-        <SearchRecordsByReportResponse xmlns="http://archer-tech.com/webservices/">
-            <SearchRecordsByReportResult>
-                <Records count="74">
-                    <Metadata>
-                        <FieldDefinitions>
-                            <FieldDefinition id="17044" guid="731690-9DBE-4352-817A-b3b52cef8b9" name="Activity ID" alias="Tracking ID" />
-                            <FieldDefinition id="238" guid="07e848fd-b4fd-b0b0-4b43b2375ae" name="Jurisdiction" alias="State Lead"/>
-                            <FieldDefinition id="30859" guid="342E104d-1430-4517-b823-9b69454a5640" name="GP Reduced Root Cause" alias="GP Internal Vendor Name"/>
-                            <FieldDefinition id="52073" guid="9741b8a8-b244-4006-9833-a9d75d706dc4" name="GP UHC Board Root Cause" alias="GP UHC Board Root Case"/>
-                            <!-- Add other FieldDefinition elements as needed -->
-                        </FieldDefinitions>
-                    </Metadata>
-                    <LevelCounts>
-                        <LevelCount id="214" guid="e1698de8-2734-41a3-ab0f-fb921a13514e" count="74"/>
-                        <LevelCount id="62" guid="b0b5320-20f-41df-a849-e546d811447ea" count="362"/>
-                    </LevelCounts>
-                    <Records>
-                        <Record contentId="258005147" levelId="214" levelGuid="e1698de8-2734-41a3-ab0f-fb921a13514e" moduleId="421" parentId="0">
-                            <Field id="17044" guid="731690-9DBE-4352-817A-b3b52cef8b9" type="id"/>
-                            <Field id="17142" guid="f7151b52-bf6f-452d-80b9-8274838d9a" type="id"/>
-                            <Field id="19409" guid="d3874a12-54d3-4089-88c9-1c806e172e07" type="id"/>
-                        </Record>
-                        <!-- Add additional Record entries -->
-                        <Record contentId="258015107" levelId="214" levelGuid="e1698de8-2734-41a3-ab0f-fb921a13514e" moduleId="421" parentId="0">
-                            <Field id="17142" guid="f7151b52-bf6f-452d-80b9-8274838d9a" type="id"/>
-                            <Field id="258015116" guid="8b5c15f2-xxb0-4d24-fffd-fg956d0" type="id"/>
-                        </Record>
-                        <!-- Add more as needed -->
-                    </Records>
-                </Records>
-            </SearchRecordsByReportResult>
-        </SearchRecordsByReportResponse>
-    </soap:Body>
-</soap:Envelope>
+<?xml version="1.0" encoding="UTF-8"?>
+<customers>
+    <customer>
+        <Customer_ID>1</Customer_ID>
+        <Name>John Doe</Name>
+        <Age>30</Age>
+        <Address>
+            <City>New York</City>
+            <District>Manhattan</District>
+            <State>NY</State>
+        </Address>
+        <Orders>
+            <Order>
+                <Order_ID>1001</Order_ID>
+                <Product>Book</Product>
+                <Quantity>2</Quantity>
+            </Order>
+            <Order>
+                <Order_ID>1002</Order_ID>
+                <Product>Pen</Product>
+                <Quantity>10</Quantity>
+            </Order>
+        </Orders>
+    </customer>
+    <customer>
+        <Customer_ID>2</Customer_ID>
+        <Name>Jane Smith</Name>
+        <Age>25</Age>
+        <Address>
+            <City>Los Angeles</City>
+            <District>Hollywood</District>
+            <State>CA</State>
+        </Address>
+        <Orders>
+            <Order>
+                <Order_ID>1003</Order_ID>
+                <Product>Laptop</Product>
+                <Quantity>1</Quantity>
+            </Order>
+        </Orders>
+    </customer>
+</customers>
