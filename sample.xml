@@ -157,4 +157,85 @@
             <payment_details>
                 <payment_method>Credit Card</payment_method>
                 <card_number>**** **** **** 4321</card_number>
-                <transaction_status>Completed</transaction_sta
+                <transaction_status>Completed</transaction_status>
+                <payment_date>2024-10-13T13:12:00</payment_date>
+            </payment_details>
+            <shipping_info>
+                <address>
+                    <line1>123 Elm Street</line1>
+                    <line2>Apt 4B</line2>
+                    <city>Springfield</city>
+                    <state>IL</state>
+                    <zip>62701</zip>
+                    <country>USA</country>
+                </address>
+                <shipping_method>Next Day Shipping</shipping_method>
+                <shipping_date>2024-10-14</shipping_date>
+                <tracking_number>TRACK112233</tracking_number>
+            </shipping_info>
+            <customer_feedback>
+                <rating>5</rating>
+                <comments>Fast delivery! Highly recommend.</comments>
+            </customer_feedback>
+        </transaction>
+        <transaction>
+            <transaction_id>T1005</transaction_id>
+            <customer_id>C126</customer_id>
+            <transaction_amount>15.50</transaction_amount>
+            <transaction_date>2024-10-13T09:30:00</transaction_date>
+            <merchant_id>M004</merchant_id>
+            <product_category>Books</product_category>
+            <payment_details>
+                <payment_method>Gift Card</payment_method>
+                <transaction_status>Completed</transaction_status>
+                <payment_date>2024-10-13T09:32:00</payment_date>
+            </payment_details>
+            <shipping_info>
+                <address>
+                    <line1>101 Maple Drive</line1>
+                    <city>Springfield</city>
+                    <state>IL</state>
+                    <zip>62704</zip>
+                    <country>USA</country>
+                </address>
+                <shipping_method>Standard Shipping</shipping_method>
+                <shipping_date>2024-10-14</shipping_date>
+                <tracking_number>TRACK445566</tracking_number>
+            </shipping_info>
+            <customer_feedback>
+                <rating>4</rating>
+                <comments>Decent book, but shipping was delayed.</comments>
+            </customer_feedback>
+        </transaction>
+        <transaction>
+            <transaction_id>T1006</transaction_id>
+            <customer_id>C127</customer_id>
+            <transaction_amount>300.00</transaction_amount>
+            <transaction_date>2024-10-14T11:05:00</transaction_date>
+            <merchant_id>M005</merchant_id>
+            <product_category>Electronics</product_category>
+            <payment_details>
+                <payment_method>Credit Card</payment_method>
+                <card_number>**** **** **** 7890</card_number>
+                <transaction_status>Completed</transaction_status>
+                <payment_date>2024-10-14T11:07:00</payment_date>
+            </payment_details>
+            <shipping_info>
+                <address>
+                    <line1>202 Birch Lane</line1>
+                    <city>Springfield</city>
+                    <state>IL</state>
+                    <zip>62705</zip>
+                    <country>USA</country>
+                </address>
+                <shipping_method>Expedited Shipping</shipping_method>
+                <shipping_date>2024-10-15</shipping_date>
+                <tracking_number>TRACK667788</tracking_number>
+            </shipping_info>
+            <customer_feedback>
+                <rating>5</rating>
+                <comments>Amazing quality! Will buy again.</comments>
+            </customer_feedback>
+        </transaction>
+    </transactions>
+</dataset>
