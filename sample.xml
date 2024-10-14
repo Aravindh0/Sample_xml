@@ -1,241 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<dataset>
-    <metadata>
-        <title>Customer Transactions</title>
-        <description>
-            This dataset contains customer transaction records, including transaction IDs, customer IDs,
-            amounts, dates, merchant IDs, and product categories, with nested details for payments and shipping.
-        </description>
-        <created_date>2024-10-14</created_date>
-        <source>Internal Transactions System</source>
-        <field_metadata>
-            <field>
-                <name>transaction_id</name>
-                <type>String</type>
-                <description>Unique identifier for each transaction.</description>
-            </field>
-            <field>
-                <name>customer_id</name>
-                <type>String</type>
-                <description>Unique identifier for the customer.</description>
-            </field>
-            <field>
-                <name>transaction_amount</name>
-                <type>Decimal</type>
-                <description>Amount of the transaction in USD.</description>
-            </field>
-            <field>
-                <name>transaction_date</name>
-                <type>DateTime</type>
-                <description>Date and time when the transaction occurred.</description>
-            </field>
-            <field>
-                <name>merchant_id</name>
-                <type>String</type>
-                <description>Unique identifier for the merchant.</description>
-            </field>
-            <field>
-                <name>product_category</name>
-                <type>String</type>
-                <description>Category of the product purchased.</description>
-            </field>
-            <field>
-                <name>payment_details</name>
-                <type>Nested</type>
-                <description>Details about the payment method used.</description>
-            </field>
-            <field>
-                <name>shipping_info</name>
-                <type>Nested</type>
-                <description>Details about the shipping address and method.</description>
-            </field>
-            <field>
-                <name>customer_feedback</name>
-                <type>Nested</type>
-                <description>Feedback provided by the customer for the transaction.</description>
-            </field>
-        </field_metadata>
-    </metadata>
-    <transactions>
-        <transaction>
-            <transaction_id>T1001</transaction_id>
-            <customer_id>C123</customer_id>
-            <transaction_amount>200.50</transaction_amount>
-            <transaction_date>2024-10-10T10:30:00</transaction_date>
-            <merchant_id>M001</merchant_id>
-            <product_category>Electronics</product_category>
-            <payment_details>
-                <payment_method>Credit Card</payment_method>
-                <card_number>**** **** **** 1234</card_number>
-                <transaction_status>Completed</transaction_status>
-                <payment_date>2024-10-10T10:32:00</payment_date>
-            </payment_details>
-            <shipping_info>
-                <address>
-                    <line1>123 Elm Street</line1>
-                    <line2>Apt 4B</line2>
-                    <city>Springfield</city>
-                    <state>IL</state>
-                    <zip>62701</zip>
-                    <country>USA</country>
-                </address>
-                <shipping_method>Standard Shipping</shipping_method>
-                <shipping_date>2024-10-11</shipping_date>
-                <tracking_number>TRACK123456</tracking_number>
-            </shipping_info>
-            <customer_feedback>
-                <rating>5</rating>
-                <comments>Great product! Fast shipping.</comments>
-            </customer_feedback>
-        </transaction>
-        <transaction>
-            <transaction_id>T1002</transaction_id>
-            <customer_id>C124</customer_id>
-            <transaction_amount>45.99</transaction_amount>
-            <transaction_date>2024-10-11T14:20:00</transaction_date>
-            <merchant_id>M002</merchant_id>
-            <product_category>Clothing</product_category>
-            <payment_details>
-                <payment_method>PayPal</payment_method>
-                <transaction_status>Completed</transaction_status>
-                <payment_date>2024-10-11T14:22:00</payment_date>
-            </payment_details>
-            <shipping_info>
-                <address>
-                    <line1>456 Oak Avenue</line1>
-                    <city>Springfield</city>
-                    <state>IL</state>
-                    <zip>62702</zip>
-                    <country>USA</country>
-                </address>
-                <shipping_method>Expedited Shipping</shipping_method>
-                <shipping_date>2024-10-12</shipping_date>
-                <tracking_number>TRACK654321</tracking_number>
-            </shipping_info>
-            <customer_feedback>
-                <rating>4</rating>
-                <comments>Good quality, but a bit slow on shipping.</comments>
-            </customer_feedback>
-        </transaction>
-        <transaction>
-            <transaction_id>T1003</transaction_id>
-            <customer_id>C125</customer_id>
-            <transaction_amount>89.75</transaction_amount>
-            <transaction_date>2024-10-12T16:45:00</transaction_date>
-            <merchant_id>M001</merchant_id>
-            <product_category>Home &amp; Kitchen</product_category>
-            <payment_details>
-                <payment_method>Debit Card</payment_method>
-                <card_number>**** **** **** 5678</card_number>
-                <transaction_status>Completed</transaction_status>
-                <payment_date>2024-10-12T16:47:00</payment_date>
-            </payment_details>
-            <shipping_info>
-                <address>
-                    <line1>789 Pine Street</line1>
-                    <city>Springfield</city>
-                    <state>IL</state>
-                    <zip>62703</zip>
-                    <country>USA</country>
-                </address>
-                <shipping_method>Standard Shipping</shipping_method>
-                <shipping_date>2024-10-13</shipping_date>
-                <tracking_number>TRACK987654</tracking_number>
-            </shipping_info>
-            <customer_feedback>
-                <rating>5</rating>
-                <comments>Excellent value for money!</comments>
-            </customer_feedback>
-        </transaction>
-        <transaction>
-            <transaction_id>T1004</transaction_id>
-            <customer_id>C123</customer_id>
-            <transaction_amount>120.00</transaction_amount>
-            <transaction_date>2024-10-13T13:10:00</transaction_date>
-            <merchant_id>M003</merchant_id>
-            <product_category>Sports</product_category>
-            <payment_details>
-                <payment_method>Credit Card</payment_method>
-                <card_number>**** **** **** 4321</card_number>
-                <transaction_status>Completed</transaction_status>
-                <payment_date>2024-10-13T13:12:00</payment_date>
-            </payment_details>
-            <shipping_info>
-                <address>
-                    <line1>123 Elm Street</line1>
-                    <line2>Apt 4B</line2>
-                    <city>Springfield</city>
-                    <state>IL</state>
-                    <zip>62701</zip>
-                    <country>USA</country>
-                </address>
-                <shipping_method>Next Day Shipping</shipping_method>
-                <shipping_date>2024-10-14</shipping_date>
-                <tracking_number>TRACK112233</tracking_number>
-            </shipping_info>
-            <customer_feedback>
-                <rating>5</rating>
-                <comments>Fast delivery! Highly recommend.</comments>
-            </customer_feedback>
-        </transaction>
-        <transaction>
-            <transaction_id>T1005</transaction_id>
-            <customer_id>C126</customer_id>
-            <transaction_amount>15.50</transaction_amount>
-            <transaction_date>2024-10-13T09:30:00</transaction_date>
-            <merchant_id>M004</merchant_id>
-            <product_category>Books</product_category>
-            <payment_details>
-                <payment_method>Gift Card</payment_method>
-                <transaction_status>Completed</transaction_status>
-                <payment_date>2024-10-13T09:32:00</payment_date>
-            </payment_details>
-            <shipping_info>
-                <address>
-                    <line1>101 Maple Drive</line1>
-                    <city>Springfield</city>
-                    <state>IL</state>
-                    <zip>62704</zip>
-                    <country>USA</country>
-                </address>
-                <shipping_method>Standard Shipping</shipping_method>
-                <shipping_date>2024-10-14</shipping_date>
-                <tracking_number>TRACK445566</tracking_number>
-            </shipping_info>
-            <customer_feedback>
-                <rating>4</rating>
-                <comments>Decent book, but shipping was delayed.</comments>
-            </customer_feedback>
-        </transaction>
-        <transaction>
-            <transaction_id>T1006</transaction_id>
-            <customer_id>C127</customer_id>
-            <transaction_amount>300.00</transaction_amount>
-            <transaction_date>2024-10-14T11:05:00</transaction_date>
-            <merchant_id>M005</merchant_id>
-            <product_category>Electronics</product_category>
-            <payment_details>
-                <payment_method>Credit Card</payment_method>
-                <card_number>**** **** **** 7890</card_number>
-                <transaction_status>Completed</transaction_status>
-                <payment_date>2024-10-14T11:07:00</payment_date>
-            </payment_details>
-            <shipping_info>
-                <address>
-                    <line1>202 Birch Lane</line1>
-                    <city>Springfield</city>
-                    <state>IL</state>
-                    <zip>62705</zip>
-                    <country>USA</country>
-                </address>
-                <shipping_method>Expedited Shipping</shipping_method>
-                <shipping_date>2024-10-15</shipping_date>
-                <tracking_number>TRACK667788</tracking_number>
-            </shipping_info>
-            <customer_feedback>
-                <rating>5</rating>
-                <comments>Amazing quality! Will buy again.</comments>
-            </customer_feedback>
-        </transaction>
-    </transactions>
-</dataset>
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <SearchRecordsByReportResponse xmlns="http://archer-tech.com/webservices/">
+            <SearchRecordsByReportResult>
+                <Records count="74">
+                    <Metadata>
+                        <FieldDefinitions>
+                            <FieldDefinition id="17044" guid="731690-9DBE-4352-817A-b3b52cef8b9" name="Activity ID" alias="Tracking ID" />
+                            <FieldDefinition id="238" guid="07e848fd-b4fd-b0b0-4b43b2375ae" name="Jurisdiction" alias="State Lead"/>
+                            <FieldDefinition id="30859" guid="342E104d-1430-4517-b823-9b69454a5640" name="GP Reduced Root Cause" alias="GP Internal Vendor Name"/>
+                            <FieldDefinition id="52073" guid="9741b8a8-b244-4006-9833-a9d75d706dc4" name="GP UHC Board Root Cause" alias="GP UHC Board Root Case"/>
+                            <!-- Add other FieldDefinition elements as needed -->
+                        </FieldDefinitions>
+                    </Metadata>
+                    <LevelCounts>
+                        <LevelCount id="214" guid="e1698de8-2734-41a3-ab0f-fb921a13514e" count="74"/>
+                        <LevelCount id="62" guid="b0b5320-20f-41df-a849-e546d811447ea" count="362"/>
+                    </LevelCounts>
+                    <Records>
+                        <Record contentId="258005147" levelId="214" levelGuid="e1698de8-2734-41a3-ab0f-fb921a13514e" moduleId="421" parentId="0">
+                            <Field id="17044" guid="731690-9DBE-4352-817A-b3b52cef8b9" type="id"/>
+                            <Field id="17142" guid="f7151b52-bf6f-452d-80b9-8274838d9a" type="id"/>
+                            <Field id="19409" guid="d3874a12-54d3-4089-88c9-1c806e172e07" type="id"/>
+                        </Record>
+                        <!-- Add additional Record entries -->
+                        <Record contentId="258015107" levelId="214" levelGuid="e1698de8-2734-41a3-ab0f-fb921a13514e" moduleId="421" parentId="0">
+                            <Field id="17142" guid="f7151b52-bf6f-452d-80b9-8274838d9a" type="id"/>
+                            <Field id="258015116" guid="8b5c15f2-xxb0-4d24-fffd-fg956d0" type="id"/>
+                        </Record>
+                        <!-- Add more as needed -->
+                    </Records>
+                </Records>
+            </SearchRecordsByReportResult>
+        </SearchRecordsByReportResponse>
+    </soap:Body>
+</soap:Envelope>
